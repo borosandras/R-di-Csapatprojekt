@@ -8,20 +8,21 @@ body{
 }
 
 .page > * {
-    border: solid rgb(0, 255, 136) 1px;
+    border: solid black 1px;
 }
 header{
-    border-color: rgb(0, 255, 34);
+    border-color: black;
     height: 150px;
 }
 nav{
-    border-color: green;
+    border-color: black;
 }
 main{
     border-color: blue;
+	
 }
 footer {
-    border-color: yellow;
+    border-color: black;
     color: lightgrey;
 }
 
@@ -42,20 +43,21 @@ header img {
     margin: 0;      padding: 0;
     grid-template-areas: 
         "header" 
-        "nav" 
+        "nav"
         "content"
         "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 150px 50px 1fr 50px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
 }
 @media screen and (min-width: 1200px) {
     .page {
         grid-template-areas: 
         "header header"
-        "nav content"
-        "nav footer";
-        grid-template-columns: 150px 1fr;
-        grid-template-rows: 150px 1fr 80px;
+		"nav nav"
+        "content content"
+        "footer footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
     }
 }
 
@@ -87,18 +89,18 @@ nav > ul li a{
     padding: 8px 15px;
 
     color: black;
-    border: 1px solid rgb(0, 255, 136);
+    border: 1px solid black;
     background-color: lightgrey;
     text-decoration: none;
     text-align: center;
 }
 nav > ul li a.active{
-    background-color: aqua;
+    background-color: black;
 }
 
 nav > ul li a:hover{
-    background-color: darkblue;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 @media screen and (max-width: 1200px) {
