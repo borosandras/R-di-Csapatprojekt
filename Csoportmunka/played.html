@@ -5,43 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lejátszott számok</title>
-    <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <nav>
-    <ul>
-        <li>DAVID GUETTA & BEBE REXHA
-            I'm Good (Blue)</li>
-            <li>AVA MAX
-                Million Dollar Baby
-            </li>
-            <li>NICKY YOURE & DAZY
-                Sunroof
-            </li>
-            <li>HARRY STYLES
-                Late Night Talking
-            </li>
-            <li>KAMRAD
-                I Believe
-            </li>
-            <li>HAYDEN JAMES, GORGON CITY & NAT DUNN
-                Foolproof
-            </li>
-            <li>GAYLE
-                abcdefu
-            </li>
-            <li>JAMES HYPE feat. MIGGY DELA ROSA
-                Ferrari
-            </li>
-            <li>MINELLI
-                MMM
-            </li>
-            <li>IMANBEK & BYOR
-                Belly Dancer
-            </li>
+<style>
+	html {
+	height:100%;
+	}
+	body {
+	background-color: grey;
+	margin:0px;
+	}	
+	header {
+	text-align: center;
+	border:1px solid black;
+	}
 
-    </ul>
-</nav>
-    
+nav{
+    border:1px solid black;
+}
+main{
+    border: 1px solid black;
+	
+}
+footer {
+	bottom:0;
+    border-color: black;
+    color: lightgrey;
+}
+
+	.page {
+
+	border: black solid 1px;
+	background-color: grey;
+    display: grid;
+    width: 100%;    height: 100%;
+    margin: 0;      padding: 0;
+    grid-template-areas: 
+        "header" 
+        "nav"
+        "content"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+	}
+
+nav > ul li a {
+    display: block;
+
+    padding: 8px 15px;
+
+    color: black;
+    border: 1px solid black;
+    background-color: lightgrey;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+    width: 100%;
+}
+	
+.page > header {
+    grid-area: header;
+}
+
+.page > nav {
+    grid-area: nav;
+}
+
+.page > main {
+    grid-area: content;
+}
+
+.page > footer {
+    grid-area: footer;
+}
+nav > ul li a.active{
+    background-color: black;
+}
+
+nav > ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+table, th, td{
+	margin-top:20px;
+	margin-bottom: 100px;
+	border:2px solid black;
+	border-collapse: collapse;
+	width:100%;
+	table-layout: fixed;
+	background-color: lightgrey;
+}
+
+th, td {
+	text-align: center;
+}
+</style>
+<body>
+    <div class="page">
+        <header>
+            <h1 style="color:black;"> MAM Rádió</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+            </ul>
+        </nav>
+        <main>
+			<table>
+			<tr>
+				<th></th>
+				<th>Cím</th>
+				<th>Hossz</th>
+				<th>Lejátszás</th>
+			</tr>
+			<tr>
+				<td><img src="https://cdn.discordapp.com/attachments/1021795500992770070/1064595147100258405/Imgood.jpg"></td>
+				<td>DAVID GUETTA & BEBE REXHA
+            I'm Good (Blue)</td>
+				<td>2:58 perc</td>
+				<td><a href="https://www.youtube.com/watch?v=90RLzVUuXe4" style="text-decoration:none; color: red;"><p>&#9654;</p></td></a>
+			</tr>
+			<tr>
+				<td><img src="https://cdn.discordapp.com/attachments/1021795500992770070/1064923084974473307/2Q.png"></td>
+				<td>AVA MAX
+                Million Dollar Baby</td>
+				<td>3:26 perc</td>
+				<td><a href="https://www.youtube.com/watch?v=WSX6ZRX4_-Q" style="text-decoration:none; color: red;"><p>&#9654;</p></td></a>
+			</tr>
+			<tr>
+				<td><img src="https://cdn.discordapp.com/attachments/1021795500992770070/1064595145892298933/sunroof.jpg"></td>
+				<td>NICKY YOURE & DAZY
+                Sunroof</td>
+				<td>2:55 perc</td>
+				<td><a href="https://www.youtube.com/watch?v=G5xSLbYMr-I" style="text-decoration:none; color: red;"><p>&#9654;</p></td></a>
+			</tr>
+			<tr>
+				<td><img src="https://cdn.discordapp.com/attachments/1021795500992770070/1064595147322576957/latenight.jpg"></td>
+				<td>HARRY STYLES
+                Late Night Talking</td>
+				<td>3:16 perc</td>
+				<td><a href="https://www.youtube.com/watch?v=4VaqA-5aQTM" style="text-decoration:none; color: red;"><p>&#9654;</p></td></a>
+			</tr>
+			<tr>
+				<td><img src="https://cdn.discordapp.com/attachments/1021795500992770070/1064597919539404830/2Q.png"></td>
+				<td>KAMRAD
+                I Believe</td>
+				<td>2:27 perc</td>
+				<td><a href="https://www.youtube.com/watch?v=ZyZtmR02acA" style="text-decoration:none; color: red;"><p>&#9654;</p></td></a>
+			</tr>
+			<tr>
+				<td><img src="https://cdn.discordapp.com/attachments/1021795500992770070/1064595146877968465/foolproof.jpg"></td>
+				<td>HAYDEN JAMES, GORGON CITY & NAT DUNN
+                Foolproof</td>
+				<td>4:28 perc</td>
+				<td><a href="https://www.youtube.com/watch?v=NlMJq4gnTzs" style="text-decoration:none; color: red;"><p>&#9654;</p></td></a>
+			</tr>
+			<tr>
+				<td><img src="https://cdn.discordapp.com/attachments/1021795500992770070/1064595146089451520/abcdefu.jpg"></td>
+				<td>GAYLE
+                abcdefu</td>
+				<td>2:58 perc</td>
+				<td><a href="https://www.youtube.com/watch?v=NaFd8ucHLuo" style="text-decoration:none; color: red;"><p>&#9654;</p></td></a>
+			</tr>
+			<tr>
+				<td><img src="https://cdn.discordapp.com/attachments/1021795500992770070/1064595146685042738/ferrari.jpg"></td>
+				<td>JAMES HYPE feat. MIGGY DELA ROSA
+                Ferrari</td>
+				<td>3:06 perc</td>
+				<td><a href="https://www.youtube.com/watch?v=4cCi6-16HR4" style="text-decoration:none; color: red;"><p>&#9654;</p></td></a>
+			</tr>
+			<tr>
+				<td><img src="https://cdn.discordapp.com/attachments/1021795500992770070/1064922426665869493/Z.png"></td>
+				<td>MINELLI
+                MMM</td>
+				<td>3:09 perc</td>
+				<td><a href="https://www.youtube.com/watch?v=tqCLIM_NOcs" style="text-decoration:none; color: red;"><p>&#9654;</p></td></a>
+			</tr>
+			<tr>
+				<td><img src="https://cdn.discordapp.com/attachments/1021795500992770070/1064595146479501383/bellydancer.jpg"></td>
+				<td>IMANBEK & BYOR
+                Belly Dancer</td>
+				<td>2:35 perc</td>
+				<td><a href="https://www.youtube.com/watch?v=bEacVcAtiKU" style="text-decoration:none; color: red;"><p>&#9654;</p></td></a>
+			</tr>
+			</table>
+        <div class="clearfix" style="text-align: center;"> <a href="index.html"style="text-decoration:none; color:black"> < </a> <a href="index.html"style="text-decoration:none; color:black">[1]</a> [2] <a href="about.html" style="text-decoration:none; color: black;">[3]</a> <a href="about.html" style="text-decoration:none; color: black;"> > </a> </div>
+        </main>
+        <footer>
+            <h4 style="color: black;">Készítette: Janovics Márk, Janovics Máté, Boros András<br>
+            &#169 Copyright</h4>
+        </footer>
+    </div>
 </body>
 </html>
