@@ -4,18 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Rádió</title>
+    <title>Rólunk</title>
+	<style>
+	html {
+	height:100%;
+	}
+	body {
+	background-color: grey;
+	margin:0px;
+	}	
+	header {
+	text-align: center;
+	border:1px solid black;
+	}
+
+nav{
+    border:1px solid black;
+}
+main{
+    border: 1px solid black;
+	
+}
+footer {
+	bottom:0;
+    border-color: black;
+    color: lightgrey;
+}
+
+	.page {
+	border: black solid 1px;
+	background-color: grey;
+    display: grid;
+    width: 100%;    height: 100%;
+    margin: 0;      padding: 0;
+    grid-template-areas: 
+        "header" 
+        "nav"
+        "content"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+	}
+
+nav > ul li a {
+    display: block;
+
+    padding: 8px 15px;
+
+    color: black;
+    border: 1px solid black;
+    background-color: lightgrey;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+    width: 100%;
+}
+	
+.page > header {
+    grid-area: header;
+}
+
+.page > nav {
+    grid-area: nav;
+}
+
+.page > main {
+    grid-area: content;
+}
+
+.page > footer {
+    grid-area: footer;
+}
+nav > ul li a.active{
+    background-color: black;
+}
+
+nav > ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+	</style>
+	
 </head>
 <body>
     <div class="page">
         <header>
-            <h1 style="color:black">Rádió</h1>
+            <h1 style="color:black;"> MAM Rádió</h1>
         </header>
         <nav>
             <ul>
+                <li><a href="index.html">Főoldal</a></li>
                 <li><a href="played.html">Lejátszott zenék</a></li>
-                <li><a href="about.html">Rólunk</a></li>
             </ul>
         </nav>
         <main>
@@ -28,22 +112,21 @@
             <li>
                 Zeneszámok listája
             </li>
-            <h2>Janovics Máté (34%)</h2>
+            <h2>Janovics Máté (33%)</h2>
             <li>
                 Főoldal alapja
             </li>
             <li>
                 CSS
             </li>
-            <h2>Janovics Márk (33%)</h2>
+            <h2>Janovics Márk (34%)</h2>
             <li>
                 Design
             </li>
             <li>Kiegészítések</li>
         </ul>
-			
-			 
-              <div class="clearfix" style="text-align: center;"> < [1] <a href="played.html" style="text-decoration:none; color: black;">[2]</a> <a href="about.html"style="text-decoration:none; color:black">[3]</a> > </div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <div class="clearfix" style="text-align: center;"> <a href="played.html"style="text-decoration:none; color:black"> < </a> <a href="index.html"style="text-decoration:none; color:black">[1]</a> <a href="played.html" style="text-decoration:none; color: black;">[2]</a> [3] > </div>
         </main>
         <footer>
             <h4 style="color: black;">Készítette: Janovics Márk, Janovics Máté, Boros András<br>
